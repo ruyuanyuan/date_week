@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>周选择</title>
+</head>
+<style>
+    .week-btn{
+        width:100%;
+        height:60px;
+        padding:30px;
+    }
+    .week-btn button{
+        width:80px;
+        height:40px;
+    }
+    .week-show{
+        width:100%;
+        height:100px;
+    }
+    .week-show li{
+        float: left;
+    }
+</style>
+<body>
+    <div class='week-btn'>
+        <button class='changeweek' week-data='-7'>上周</button>
+        <button class='changeweek' week-data='-14'>过去2周</button>
+        <button class='changeweek' week-data='-21'>过去3周</button>
+        <button class='changeweek' week-data='-28'>过去4周</button>
+    </div>
+    <div class='week-show'></div>
+</body>
+</html>
+<script src="./jquery-2.1.4.js"></script>
+<script src="./week.js"></script>
